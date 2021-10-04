@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .container-fluid a {
+  font-size: 2.4rem;
+}
+
+.navbar .collapse ul li {
+  padding-left: 3rem;
+}
+
+.navbar .collapse ul li a {
+  font-size: 1.5rem;
+}
+
+.navbar .icons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 3rem;
+  width: 72rem;
+}
+
+.navbar .icons img {
+  margin: 0 3rem;
+  opacity: 70%;
+}
+
+.about {
+  height: 75rem;
+  /* background-color: beige; */
+  color: black;
+}
+
+.line {
+  height: 0.6rem;
+  width: 1rem;
+  margin-left: 9.7rem;
+  background-color: black;
+  animation-name: line-animation;
+  animation-duration: 2s;
+  animation-delay: 1s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+.heading {
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10rem 0 0 10rem;
+}
+
+.about img {
+  width: 37rem;
+  border-radius: 7rem;
+}
+
+.about .details {
+  width: 50%;
+  font-size: 2.5rem;
+}
+
+.about .about-container {
+  margin: 7rem auto;
+  width: 125rem;
+  height: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 10px 20px rgb(230, 224, 224);
+  border-radius: 12px;
+}
+
+.skills  {
+  height: 80rem;
+  /* background-color: aquamarine; */
+}
+
+.skills .skill-container {
+  margin: 5rem auto;
+  padding: 2rem 0;
+  height: 55rem;
+  width: 125rem;
+  background-color: white;
+  box-shadow: 5px 10px 20px rgb(230, 224, 224);
+  border-radius: 12px;
+}
+
+.skills .progress {
+  margin: 1rem 20rem 1rem 13.2rem;
+}
+
+.skills .skill-name {
+  margin: 4rem 0 1rem 13rem;
+  font-size: 2.5rem;
+}
+
+.projects {
+  height: 75rem;
+  /* background-color: beige; */
+}
+
+.projects .card {
+  margin: 5rem 10rem;
+}
+
+.projects .projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  width: 125rem;
+  height: 50rem;
+  background-color: white;
+  box-shadow: 5px 10px 20px rgb(230, 224, 224);
+  border-radius: 12px;
+  border: 0.5px gray;
+}
+
+.projects .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.projects .card-text {
+  font-size: 1.4rem;
+}
+
+.projects .projects-container img {
+  height: 14rem;
+}
+
+.contact {
+  height: 100rem;
+  /* background-color: aquamarine; */
+}
+
+.contact .contact-container {
+  margin: 4rem 41rem 5rem 5rem;
+  font-size: 2.4rem;
+  width: 125rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 5px 10px 20px rgb(230, 224, 224);
+  border-radius: 12px;
+}
+
+.contact .contact-container .mb-3 {
+  margin-top: 3rem;
+}
+
+.contact .contact-container input {
+  height: 5vh;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.contact .contact-container .mb-3 .concern {
+  height: 10rem;
+  padding-bottom: 6.5rem;
+}
+
+.contact .submit-button {
+  font-size: 2rem;
+  width: 125rem;
+  border-radius: 0.5rem;
+  margin: 0 5rem;
+}
+
+footer {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  /* background-color: black; */
+}
+
+@media(max-width: 1024px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 812px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 30%;
+  }
+
+  .navbar .icons img {
+    height: 2rem;
+  }
+
+  .navbar .icons {
+    margin-top: 2rem;
+    justify-content: left;
+  }
+
+  .contact {
+    height: 105rem;
+  }
+
+  .contact .contact-container {
+    margin-left: 17rem;
+  }
+
+  .contact .contact-container input {
+    height: 2vh;
+  }
+  
+  .contact .submit-button {
+    margin-left: 17rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 15%;
+  }
+
+  .about {
+    height: 140rem;
+  }
+
+  .about .about-container {
+    flex-direction: column;
+    height: 110rem;
+  }
+
+  .contact .contact-container input {
+    height: 2vh;
+  }
+}
+
+
+@keyframes line-animation {
+  from { width: 1rem;}
+  to { width: 18rem;}
+}
